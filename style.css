@@ -8,7 +8,6 @@ Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: underscore-pets
-Tags:
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
@@ -42,6 +41,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Media
 	## Captions
 	## Galleries
+# Footer
 --------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
@@ -55,6 +55,8 @@ html {
 
 body {
 	margin: 0;
+	background-color: #00c5a4;
+
 }
 
 article,
@@ -281,7 +283,20 @@ h5,
 h6 {
 	clear: both;
 }
-
+h1, h2, h3, h4, h5, h6{
+	font-family: sans-serif;
+	font-weight: normal;
+	line-height:125%;
+}
+h2{
+	font-size:1.5em; /* 24px / 16px */
+	margin-bottom:1em;
+}
+h3{
+	font-size:1.250em; /* 20px / 16px */
+	margin-bottom:1em;
+	padding-top:1em;
+}
 p {
 	margin-bottom: 1.5em;
 }
@@ -918,4 +933,19 @@ object {
 
 .gallery-caption {
 	display: block;
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+
+#colophon{
+	background-color: #21292c;
+    box-sizing: border-box;
+    clear:both;
+    color: #fff;
+    padding: 1.5em; /* 24px / 16px */
+    position: relative;
+    text-align: center;
+    width: 100%;
 }
