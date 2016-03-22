@@ -898,7 +898,7 @@ a:active {
 	.column:nth-child(4n+1) { margin-left: 0; clear: left; }
 	.column img { max-width: 100%; height: auto; }
 	h2.entry-title { font-size: 12px; font-weight: bold; line-height: 1.5; }
-	
+
 #content {
 	background-color: #006666;
 	color: #f2f2f2;
@@ -909,7 +909,7 @@ a:active {
 	width:90%;
 }
 #page{
-	background-color: #d9d9d9;
+	background-color: transparent;
 }
 .sticky {
 	display: block;
@@ -1121,6 +1121,72 @@ object {
     width: 100%;
 }
 /*--------------------------------------------------------------
-# Footer
+# Compatibility
 --------------------------------------------------------------*/
+@media screen and (max-width: 960px) {
+	.container{
+	width:auto;
+}
+	.column{
+	float: none;
+	width: auto;
+}
+	#primary,
+	#secondary,
+	#sidebar{
+		float: none;
+		margin: auto;
+		width: 100%;
+	}
+	#secondary .widget-area.side-widget-area{
+		margin:0 2.5% 1em;
+		width:45%;
+	}
+	#secondary .column:last-child{
+		margin-right:2.5%;
+	}
+	div.site-info{
+		font-family: 'Courgette';
+	}
+
+   /* Smartphone Portrait and Landscape */
+@media only screen
+   and (min-device-width : 320px)
+   and (max-device-width : 480px){ .mobileShow { display: inline;}}
+      .mobileShow { display: none;}
+      
+@media screen and (max-width: 480px) {
+	nav#site-navigation.main-navigation {
+    	height: auto;
+    }
+    nav#site-navigation.main-navigation ul li{
+	    display:block;
+    }
+    nav#site-navigation.main-navigation ul li a:hover{
+	    background-color:#BE3F48;
+	    color:#FFF;
+    }
+	#primary img{
+		float: none;
+		margin: 0 0 1em;
+		max-width: 100%;
+	}
+	.mobileShow {
+    	display: block !important;
+    }
+
+	#secondary .widget-area.side-widget-area{
+		margin:0 0 1em;
+		width:100%;
+	}
+	#secondary .column:last-child{
+		margin-right:0;
+	}
+	#colophon{
+		background-color:#21292c;
+	}
+	div.site-info{
+		font-family: 'Courgette';
+		float:left;
+	}
 
