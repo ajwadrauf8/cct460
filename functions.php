@@ -166,6 +166,9 @@ function underscore_pets_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'underscore_pets_scripts' );
 
+// Call the file that controls the theme options
+require get_stylesheet_directory() . '/inc/options.php';
+
 /**
  * Implement the Custom Header feature.
  */
