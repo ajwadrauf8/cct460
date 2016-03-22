@@ -6,7 +6,7 @@
  * @package Underscore_Pets
  */
 function cd_add_submenu() {
-		add_submenu_page( 'themes.php', 'My Super Awesome Options Page', 'Theme Options', 'manage_options', 'theme_options', 'my_theme_options_page');
+		add_submenu_page( 'themes.php', 'Options Page', 'Theme Options', 'manage_options', 'theme_options', 'my_theme_options_page');
 	}
 add_action( 'admin_menu', 'cd_add_submenu' );
 	
