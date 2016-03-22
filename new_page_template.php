@@ -17,8 +17,8 @@
 get_header(); ?>
 
 
-<div id="primary" class="site-content">
-
+<div id="primary" class="content-area">
+<main id="main" class="site-main" role="main">
 	<?php
 	/**
 	 * Loop to show post title and content
@@ -88,7 +88,7 @@ get_header(); ?>
 		</article><!-- #post-0 -->
 
 	<?php endif; ?>
-
-</div><!-- .site-content -->
+</main><!-- #main -->
+</div><!-- .content-area -->
 
 <?php get_footer(); ?>
