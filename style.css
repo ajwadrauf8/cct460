@@ -867,6 +867,20 @@ a:active {
 #secondary aside{
 	width:100%;
 }
+#secondary{
+	border-top:1px solid #a7a7a7;
+	clear:both;
+	margin:1em 0; /* 32px / 16px */
+	padding: 1em 0;
+}
+#secondary .widget-area.side-widget-area{
+	float:left;
+	margin:0 4% 1em 0;
+	width:22%;
+}
+#secondary .column:last-child{
+	margin-right:0;
+}
 
 /*--------------------------------------------------------------
 # Content
