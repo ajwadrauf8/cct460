@@ -1123,6 +1123,7 @@ object {
 /*--------------------------------------------------------------
 # Compatibility
 --------------------------------------------------------------*/
+/* Web Browser Compatibility for Destop and Laptop */
 @media screen and (max-width: 960px) {
 	.container{
 	width:auto;
@@ -1171,9 +1172,6 @@ object {
 		margin: 0 0 1em;
 		max-width: 100%;
 	}
-	.mobileShow {
-    	display: block !important;
-    }
 
 	#secondary .widget-area.side-widget-area{
 		margin:0 0 1em;
@@ -1184,9 +1182,5 @@ object {
 	}
 	#colophon{
 		background-color:#21292c;
-	}
-	div.site-info{
-		font-family: 'Courgette';
-		float:left;
 	}
 
