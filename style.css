@@ -23,6 +23,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
 # Normalize
+# Header
 # Typography
 # Elements
 # Forms
@@ -261,6 +262,14 @@ table {
 td,
 th {
 	padding: 0;
+}
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+
+header#masthead.site-header {
+	background-color: #21292c;
 }
 
 /*--------------------------------------------------------------
@@ -546,6 +555,56 @@ textarea {
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
+nav#site-navigation.main-navigation{
+	background-color:#21292c;
+	font-family: 'Courgette';
+}
+nav#site-navigation.main-navigation ul li a{
+	background-color: #21292c;
+}
+nav#site-navigation.main-navigation ul{
+	background-color: #21292c;
+}
+.main-navigation a {
+	font-family: 'Courgette', sans-serif;
+	padding: 0.1em;
+	display: block;
+	height:1.250em; /* 36px / 16px */
+	line-height:1.250em; /* 36px / 16px */
+	margin:0.350em 0 1em; /* 12px /16px    48px / 16px */
+	text-align:center;
+}
+.main-navigation ul{
+	list-style-type:none;
+	margin:auto;
+	width:auto;
+}
+.main-navigation ul li{
+	display:inline-block;
+}
+.main-navigation ul li a{
+	color:#fff;
+	display:block;
+	font-family:'Courgette', sans-serif;
+	font-weight: normal;
+	padding:0 1em;
+	text-decoration:none;
+	text-transform: uppercase;
+}
+.main-navigation ul li a:hover{
+	color:#00c4a4;
+	padding: 0.1em;
+	display: block;
+	height:1.250em; /* 36px / 16px */
+	line-height:1.250em; /* 36px / 16px */
+	margin:0.350em 0 1em; /* 12px /16px    48px / 16px */
+
+}
+#main{
+	margin: auto;
+    padding: 0;
+    width: 93.75%; /* 900px with 30px margin on either side */
+}
 /*--------------------------------------------------------------
 ## Links
 --------------------------------------------------------------*/
@@ -792,6 +851,18 @@ a:active {
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
+#content {
+	background-color: #006666;
+	color: #f2f2f2;
+	font-weight: 400;
+	line-height:125%;
+	margin:3em auto; /* 48px 16px */
+	max-width:960px;
+	width:90%;
+}
+#page{
+	background-color: #d9d9d9;
+}
 .sticky {
 	display: block;
 }
