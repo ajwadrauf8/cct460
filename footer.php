@@ -24,5 +24,12 @@
 
 <?php wp_footer(); ?>
 
+<script type="text/javascript">
+jQuery(document).ready(function($) {
+	$.backstretch("<?php echo get_stylesheet_directory_uri(); ?>/img/theimage.jpg"
+		);
+});
+ </script>
+
 </body>
 </html>
