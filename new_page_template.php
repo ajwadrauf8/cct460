@@ -91,4 +91,6 @@ get_header(); ?>
 </main><!-- #main -->
 </div><!-- .content-area -->
 
-<?php get_footer(); ?>
+get_sidebar();
+get_footer();
+
