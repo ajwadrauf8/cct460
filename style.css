@@ -44,6 +44,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	## Galleries
 # Pagination
 # Footer
+# Compatibility
 --------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
@@ -889,6 +890,15 @@ a:active {
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
+.columns { margin: 1em 0; }
+	.columns:before, .columns:after { content: " "; display: table; }
+	.columns:after { clear: both; }
+	.column { float: left; margin: 0 2.5% 10px 0; width: 22.5%; }
+	.column:nth-child(4n) { margin-right: 0; }
+	.column:nth-child(4n+1) { margin-left: 0; clear: left; }
+	.column img { max-width: 100%; height: auto; }
+	h2.entry-title { font-size: 12px; font-weight: bold; line-height: 1.5; }
+	
 #content {
 	background-color: #006666;
 	color: #f2f2f2;
@@ -1110,3 +1120,7 @@ object {
     text-align: center;
     width: 100%;
 }
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+
