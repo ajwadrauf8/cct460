@@ -49,9 +49,11 @@ get_header(); ?>
 			rewind_posts();
 			$temp = $wp_query;
 			$wp_query = NULL;
+			$options = get_option( 'cd_options_settings');
 
 			$show_posts = '10'; // change this to show a specific number of posts per page
-			$cat = 'post-formats'; // change this to specify category to show
+			$cat = $options['cd_text_field'];
+			//post-formats'; // change this to specify category to show
 			$image_size = array(330,330); // change to specify featured image size, HcL
 
 		?>
