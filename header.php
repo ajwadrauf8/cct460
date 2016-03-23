@@ -25,20 +25,7 @@
 <body <?php body_class(); ?>>
 
 
-<!-- Place somewhere in the <body> of your page -->
-<div class="flexslider">
-  <ul class="slides">
-    <li>
-      <img src="http://www.pawderosa.com/images/puppies.jpg" />
-    </li>
-    <li>
-      <img src="http://www.pamperedpetz.net/wp-content/uploads/2015/09/Puppy1.jpg" />
-    </li>
-    <li>
-      <img src="http://media.mydogspace.com.s3.amazonaws.com/wp-content/uploads/2013/08/puppy-500x350.jpg" />
-    </li>
-  </ul>
-</div>
+
 
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#main"><?php esc_html_e( 'Skip to content', 'underscore-pets' ); ?></a>
@@ -67,3 +54,17 @@
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">
+	<!-- Place somewhere in the <body> of your page -->
+<div class="flexslider">
+  <ul class="slides">
+    <li>
+      <img src="http://www.pawderosa.com/images/puppies.jpg" />
+    </li>
+    <li>
+      <img src="http://www.pamperedpetz.net/wp-content/uploads/2015/09/Puppy1.jpg" />
+    </li>
+    <li>
+      <img src="http://media.mydogspace.com.s3.amazonaws.com/wp-content/uploads/2013/08/puppy-500x350.jpg" />
+    </li>
+  </ul>
+</div>
