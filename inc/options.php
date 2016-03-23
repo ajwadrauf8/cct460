@@ -16,7 +16,7 @@ function cd_settings_init() {
 	
 	add_settings_section(
 		'cd_options_page_section', 
-		'Post Category Selection', 
+		'Post Category Selection for template', 
 		'cd_options_page_section_callback', 
 		'theme_options'
 	);
@@ -33,21 +33,7 @@ function cd_settings_init() {
 		'cd_options_page_section' 
 	);
 
-	add_settings_field( 
-		'cd_checkbox_field', 
-		'Grid Posts Display', 
-		'cd_checkbox_field_render', 
-		'theme_options', 
-		'cd_options_page_section'  
-	);
 
-	add_settings_field( 
-		'cd_radio_field', 
-		'Choose a Display Layout Grid Size', 
-		'cd_radio_field_render', 
-		'theme_options', 
-		'cd_options_page_section'  
-	);
 	
 
 	
