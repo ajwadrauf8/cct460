@@ -16,13 +16,13 @@ function cd_settings_init() {
 	
 	add_settings_section(
 		'cd_options_page_section', 
-		'Your section description', 
+		'Post Category Selection', 
 		'cd_options_page_section_callback', 
 		'theme_options'
 	);
 	
 	function cd_options_page_section_callback() { 
-		echo 'A description and detail about the section.';
+		echo 'Use the tools below to set the post category that you would want to display. Only for New Page Template. You can change Template Page in Dashboard > Pages';
 	}
 
 	add_settings_field( 
@@ -109,7 +109,7 @@ function cd_settings_init() {
 	function my_theme_options_page(){ 
 		?>
 		<form action="options.php" method="post">
-			<h2>My Awesome Options Page</h2>
+			<h2>Theme options for underscorePets Theme</h2>
 			<?php
 			settings_fields( 'theme_options' );
 			do_settings_sections( 'theme_options' );
