@@ -12,6 +12,8 @@
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
+
+
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
@@ -21,6 +23,23 @@
 </head>
 
 <body <?php body_class(); ?>>
+
+
+<!-- Place somewhere in the <body> of your page -->
+<div class="flexslider">
+  <ul class="slides">
+    <li>
+      <img src="http://www.pawderosa.com/images/puppies.jpg" />
+    </li>
+    <li>
+      <img src="http://www.pamperedpetz.net/wp-content/uploads/2015/09/Puppy1.jpg" />
+    </li>
+    <li>
+      <img src="http://media.mydogspace.com.s3.amazonaws.com/wp-content/uploads/2013/08/puppy-500x350.jpg" />
+    </li>
+  </ul>
+</div>
+
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#main"><?php esc_html_e( 'Skip to content', 'underscore-pets' ); ?></a>
 
