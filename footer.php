@@ -31,5 +31,19 @@ jQuery(document).ready(function($) {
 });
  </script>
 
+
+ <?php 
+$options = get_option( 'cd_options_settings' );
+echo $options['cd_text_field'] . '<br />';
+if (isset($options['cd_checkbox_field']) == 'on'){
+echo $options['cd_checkbox_field'] . '<br />';
+} else {
+echo 'off <br />';
+}
+echo $options['cd_radio_field'] . '<br />';
+echo $options['cd_textarea_field'] . '<br />';
+echo $options['cd_select_field'];
+?>
+
 </body>
 </html>

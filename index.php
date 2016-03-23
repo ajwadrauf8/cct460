@@ -1,13 +1,13 @@
 <?php
 /**
- * The main template file.
- *
- * This is the most generic template file in a WordPress theme
- * and one of the two required files for a theme (the other being style.css).
- * It is used to display a page when nothing more specific matches a query.
- * E.g., it puts together the home page when no home.php file exists.
- *
- * @link https://codex.wordpress.org/Template_Hierarchy
+ * Name          : Yahya Al-Mashni, Ajwad Rauf, Benjamin Sin
+ * Assignment    : Group Theme Assignment
+ * Description   : Custom theme based on Undersore package. Custom Slider implemented throught Javascript.
+ * Custom Post type defined as Slide, implments links and featured images to be shown on javascript slider. 
+ * Custom options page implmented that changes the category type displayed on a cutom page template.
+ * Custom Page template implments a square grid layout, with custom pagination, next and before arrows and page number naviagtion.
+ * Custom shortcode that implments slider wherever required.
+ * Custom icon for custom post type.
  *
  * @package Underscore_Pets
  */
