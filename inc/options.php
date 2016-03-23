@@ -25,7 +25,13 @@ function cd_settings_init() {
 		echo 'Use the tools below to set the post category that you would want to display. Only for New Page Template. You can change Template Page in Dashboard > Pages';
 	}
 
-
+	add_settings_field( 
+		'cd_text_field', 
+		'Enter the name of category', 
+		'cd_text_field_render', 
+		'theme_options', 
+		'cd_options_page_section' 
+	);
 
 	add_settings_field( 
 		'cd_checkbox_field', 
@@ -45,13 +51,7 @@ function cd_settings_init() {
 	
 
 	
-	add_settings_field( 
-		'cd_select_field', 
-		'Choose from the dropdown', 
-		'cd_select_field_render', 
-		'theme_options', 
-		'cd_options_page_section'  
-	);
+
 
 	function cd_text_field_render() { 
 		$options = get_option( 'cd_options_settings' );
