@@ -54,7 +54,10 @@
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">
-	<!-- Place somewhere in the <body> of your page -->
+
+	<?php echo wptuts_slider_template(); ?>
+	
+	<!-- Place somewhere in the <body> of your page 
 <div class="flexslider">
   <ul class="slides">
     <li>
@@ -68,3 +71,4 @@
     </li>
   </ul>
 </div>
+-->
