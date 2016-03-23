@@ -25,17 +25,11 @@ function cd_settings_init() {
 		echo 'Use the tools below to set the post category that you would want to display. Only for New Page Template. You can change Template Page in Dashboard > Pages';
 	}
 
-	add_settings_field( 
-		'cd_text_field', 
-		'Enter your text', 
-		'cd_text_field_render', 
-		'theme_options', 
-		'cd_options_page_section' 
-	);
+
 
 	add_settings_field( 
 		'cd_checkbox_field', 
-		'Check your preference', 
+		'Grid Posts Display', 
 		'cd_checkbox_field_render', 
 		'theme_options', 
 		'cd_options_page_section'  
@@ -43,19 +37,13 @@ function cd_settings_init() {
 
 	add_settings_field( 
 		'cd_radio_field', 
-		'Choose an option', 
+		'Choose a Display Layout Grid Size', 
 		'cd_radio_field_render', 
 		'theme_options', 
 		'cd_options_page_section'  
 	);
 	
-	add_settings_field( 
-		'cd_textarea_field', 
-		'Enter content in the textarea', 
-		'cd_textarea_field_render', 
-		'theme_options', 
-		'cd_options_page_section'  
-	);
+
 	
 	add_settings_field( 
 		'cd_select_field', 
@@ -83,9 +71,9 @@ function cd_settings_init() {
 	function cd_radio_field_render() { 
 		$options = get_option( 'cd_options_settings' );
 		?>
-		<input type="radio" name="cd_options_settings[cd_radio_field]" <?php if (isset($options['cd_radio_field'])) checked( $options['cd_radio_field'], 1 ); ?> value="1" /> <label>Option One</label><br />
-		<input type="radio" name="cd_options_settings[cd_radio_field]" <?php if (isset($options['cd_radio_field'])) checked( $options['cd_radio_field'], 2 ); ?> value="2" /> <label>Option Two</label><br />
-		<input type="radio" name="cd_options_settings[cd_radio_field]" <?php if (isset($options['cd_radio_field'])) checked( $options['cd_radio_field'], 3 ); ?> value="3" /> <label>Option Three</label>
+		<input type="radio" name="cd_options_settings[cd_radio_field]" <?php if (isset($options['cd_radio_field'])) checked( $options['cd_radio_field'], 1 ); ?> value="1" /> <label>4</label><br />
+		<input type="radio" name="cd_options_settings[cd_radio_field]" <?php if (isset($options['cd_radio_field'])) checked( $options['cd_radio_field'], 2 ); ?> value="2" /> <label>6</label><br />
+		<input type="radio" name="cd_options_settings[cd_radio_field]" <?php if (isset($options['cd_radio_field'])) checked( $options['cd_radio_field'], 3 ); ?> value="3" /> <label>8</label>
 		<?php
 	}
 	
