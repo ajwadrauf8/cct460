@@ -323,7 +323,7 @@ h1{
 	font-family: 'Courgette';
 }
 h2{
-	font-size:1.5em; /* 24px / 16px */
+	font-size:2.5em; /* 24px / 16px */
 	margin-bottom:1em;
 	font-family: 'Exo 2';
 }
@@ -888,6 +888,15 @@ aside#secondary .widget-area{
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
+#content {
+	background-color: #006666;
+	color: #f2f2f2;
+	font-weight: 400;
+	line-height:125%;
+	margin:3em auto; /* 48px 16px */
+	max-width:960px;
+	width:90%;
+}
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
@@ -900,15 +909,7 @@ aside#secondary .widget-area{
 	.column img { max-width: 100%; height: auto; }
 	h2.entry-title { font-size: 12px; font-weight: bold; line-height: 1.5; }
 
-#content {
-	background-color: #006666;
-	color: #f2f2f2;
-	font-weight: 400;
-	line-height:125%;
-	margin:3em auto; /* 48px 16px */
-	max-width:960px;
-	width:90%;
-}
+
 #page{
 	background-color: transparent;
 }
@@ -1180,7 +1181,7 @@ object {
 	    background-color:#BE3F48;
 	    color:#FFF;
     }
-	#primary img{
+	#primary{
 		float: none;
 		margin: 0 0 1em;
 		max-width: 100%;
